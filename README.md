@@ -28,12 +28,12 @@ This role can work on Debian derived OS, but it's not our priority.
 
 ## How to use
 
-* `host_vars/dns-master`
+* `host_vars/dns.master.local`
  ```
  bind_role: master
  ```
 
-* `host_vars/dns-slave`
+* `host_vars/dns.slave.local`
  ```
  bind_role: slave
  ```
