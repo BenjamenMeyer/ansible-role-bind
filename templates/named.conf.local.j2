@@ -3,7 +3,7 @@
 {% if 'state' not in value or value.state|lower not in ['disabled', 'absent'] %}
 
 zone "{{ zone }}" IN {
-  type master;
+  type {{ bind_role }};
 {% if 'dnssec' in value and value.dnssec %}
   file "/etc/bind/zones/{{ zone }}/db.signed";
 {% else %}
